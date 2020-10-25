@@ -1,0 +1,23 @@
+#Using the print function
+print ('This is how the print function works')
+#Trying out variables
+a = 1
+b = 2
+c = a+b
+print(a+b)
+#Using the input function
+inputVal = input("Please enter anything so I can use this code:")
+print (inputVal)
+#Taking on multiple inputs and using a delimiter
+inputVal1, inputVal2, inputVal3 = input("Please input three numeric values (separated by a comma and a space)"
+                                        " and the program will output them:").split(',')
+print('The first numeric value: ', inputVal1)
+print('The second numeric value: ', inputVal2)
+print('The third numeric value: ', inputVal3)
+#Using a while loop
+count = 0
+while count<100:
+    #++ doesn't exist in python language
+    #+= requires that we specify how much we are adding to the variable each iteration
+    count+=1
+print('The count = %d'%(count))
