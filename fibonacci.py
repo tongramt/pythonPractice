@@ -3,8 +3,12 @@
 
 finished = 0
 while finished == 0:
-    inputValue = input("Please input a number and the program will output"
-                     " the two previous numbers in the Fibonacci sequence: ")
+    try:
+        inputValue = int(input("Please input a number and the program will output"
+                         " the two previous numbers in the Fibonacci sequence: "))
+    except ValueError:
+            print("Please rerun the code and enter a number")
+
     firstFib = int(1)
     secondFib = int(2)
     if inputValue.isdigit():
