@@ -16,7 +16,7 @@ tenth = "ten lords a leaping,"
 eleventh = "eleven pipers piping,"
 twelfth = "twelve drummers drumming,"
 i = 0
-while (i < 8):
+while (i < 12):
     if (i == 0):
         print(start, dayIndex[i], day, first, "\n")
     elif (i == 1):
@@ -43,8 +43,7 @@ while (i < 8):
     elif (i == 10):
         print(start, dayIndex[i], day, eleventh, tenth, "\n", ninth, eighth, seventh, sixth, "\n", fifth, fourth, third,
               second, "\n", "and", first, "\n")
-    elif (i == 11):
+    else:
         print(start, dayIndex[i], day, twelfth, eleventh, "\n", tenth, ninth, eighth, seventh, "\n", sixth, fifth,
               fourth, third, "\n", second, "and", first, "\n")
-
     i = i + 1
